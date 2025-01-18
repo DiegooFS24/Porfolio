@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html scroll-behavior: smooth; lang="en">
+  <head>
+    <!-- Metadatos y recursos principales (iconos, fuentes, estilos) -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Enlace a iconos, Google Fonts y AOS (animación al hacer scroll) -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+    <!-- Archivo de estilos principal -->
+    <link href="./css/styles.css" rel="stylesheet" />
+
+    <title>Diego - Fullstack Junior Developer</title>
+  </head>
+
+  <body>
+    <!-- Encabezado con menú de navegación -->
+    <header class="header">
+      <nav class="nav h-grid">
+        <!-- Logo del sitio -->
+        <div>
+          <a href="#" class="nav__logo">Diego</a>
+        </div>
+
+        <!-- Menú de navegación con secciones de la web -->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#qualification" class="nav__link">Qualification</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            <!-- Cambiar idioma: inglés o español -->
+            <li class="nav__item"><a href="./index-es.html" class="nav__link nav__link-es">ES</a></li>
+            <li class="nav__item"><a href="./index.html" class="nav__link nav__link-en">EN</a></li>
+          </ul>
+        </div>
+
+        <!-- Botón menú hamburguesa (vista móvil) -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Sección de Inicio (Home) -->
+      <section class="home h-grid" id="home">
+        <!-- Presentación con nombre y título -->
+        <div data-aos="fade-down" class="home__data">
+          <h1 class="home__title">
+            Hi, <br />
+            I'm <span class="home__title-color">Diego</span> <br />
+            Junior Fullstack Developer
+          </h1>
+          <!-- Enlace para descargar el CV -->
+          <a
+            href="assets\img\profile\Diego Fernandez Sevilla CV.pdf"
+            target="_blank"
+            class="button"
+            data-aos="fade-down"
+            download="Diego Fernandez Sevilla CV.pdf">
+          Download here my CV
+          </a>
+        </div>
+
+        <!-- Iconos de redes sociales -->
+        <div data-aos="fade-down" class="home__social">
+          <a href="https://www.linkedin.com/in/diego-fernandez-sevilla/" target="_blank" class="home__social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/DiegooFS24" target="_blank" class="home__social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a
+            href="mailto:diegofersev49@gmail.com"
+            class="home__social-icon"
+            target="_blank"
+            ><i class="bx bxl-gmail"></i
+          ></a>
+        </div>
+
+        <!-- Imagen de perfil -->
+        <div data-aos="fade-down" class="home__img">
+          <img src="./assets/img/profile/home-perfil.png" alt="" class="home__img-perfil" />
+        </div>
+      </section>
+
+      <!-- Sección About (Acerca de mí) -->
+      <section class="about section" id="about">
+        <h2 data-aos="fade-down" class="section-title">About me</h2>
+
+        <div data-aos="zoom-in" class="about__container h-grid">
+          <!-- Imagen de perfil en la sección About -->
+          <div class="about__img">
+            <img src="./assets/img/profile/Diego_Fernandez_Sevilla_SinFondo.png" alt="about-perfil" />
+          </div>
+
+          <!-- Texto sobre mi perfil y experiencia -->
+          <div data-aos="zoom-in" class="about__content">
+            <h2 class="about__subtitle">I'm Diego Fernández Sevilla</h2>
+            <p class="about__text">
+              I am passionate about programming, sports, and all forms of art.
+              My curiosity and adaptability have led me to explore various technologies, from web development to blockchain.
+              I’m always eager to learn new skills and tackle challenges that push me further.
+              Whether it's crafting a simple website or diving into more complex solutions, I enjoy the process of taking my ideas to the reality.
+              I’m constantly striving to improve and grow as a developer, and I look forward to where this journey will take me.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección Projects (Proyectos) -->
+      <section data-aos="fade-down" class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects__container h-grid">
+          <!-- Proyecto 1: Mi portafolio -->
+          <div data-aos="fade-down" class="projects__links">
+            <a href="#"
+              ><img src="assets\img\projects\my-porfolio.png" alt=""
+            /></a>
+            <h4 class="project__title">My Portfolio</h4>
+
+            <!-- Proyecto pendiente de subir a GitHub -->
+            <!-- Hacer el link cuando lo suba a github
+            <div class="project__link-item">
+              <a href="https://github.com/diegoofs24/encriptador.git" class="project__item" target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a href="https://diegoofs24.github.io/encriptador/" class="project__item" target="_blank"
+                ><i class="bx bx-globe"></i
+              ></a>
+            </div>
+            -->
+          </div>
+
+          <!-- Proyecto 2: Sports meetings forum -->
+          <div data-aos="fade-down" class="projects__links">
+            <a href="https://diegofernandezsevilla.com/movolize/index.php" >
+              <img src="assets/img/projects/movolize.png" alt=""/>
+            </a>
+            <h4 class="project__title">Sports meetings forum</h4>
+
+            <div class="project__link-item">
+              <a href="https://github.com/DiegooFS24/Movolize" class="project__item" target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a href="https://diegofernandezsevilla.com/movolize/index.php" class="project__item" target="_blank"
+                ><i class="bx bx-globe"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        
+          <!-- Proyecto 3: To Do List -->
+          <div data-aos="fade-down" class="projects__links">
+            <a href="https://diegofernandezsevilla.com/ToDoList/indexTDL.php">
+              <img src="assets/img/projects/ToDoList.png" alt=""/>
+            </a>
+            <h4 class="project__title">To Do List</h4>
+
+            <!-- Proyecto pendiente de subir a GitHub -->
+            <!-- Hacer el link cuando lo suba a github
+            <div class="project__link-item">
+              <a href="https://github.com/diegoofs24/encriptador.git" class="project__item" target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a href="https://diegoofs24.github.io/encriptador/" class="project__item" target="_blank"
+                ><i class="bx bx-globe"></i
+              ></a>
+            </div>
+          </div>
+          -->
+        </div>
+      </section>
+
+      <!-- Sección de Cualificaciones (Qualifications) -->
+      <section data-aos="fade-down" class="qualification section" id="qualification">
+        <h2 class="section-title">My Qualifications</h2>
+
+        <!-- Dos columnas: Educación y Experiencia -->
+        <div class="qualification__container h-grid">
+          <!-- Columna de Educación -->
+          <div data-aos="fade-down" class="qualification__links">
+            <h3 class="qualification__title">
+              <img src="assets/icon/graduation-hat-alt-2-svgrepo-com.svg" alt="graduation-icon" class="qualification__icon" />
+              Education
+            </h3>
+            <ul class="qualification__list">
+              <li>Advanced Vocational Degree in System Administration - CESUR</li>
+              <li class="small-text">(The best vocational training center in Spain according to <a href="https://strategik.es/fp-ranking-2021-v2/" target="_blank">Strategik</a>)</li>
+              <li>Blockchain applied to cybersecurity - C1b3rWall & National Police </li>
+            </ul>
+          </div>
+
+          <!-- Columna de Experiencia Laboral -->
+          <div data-aos="fade-down" class="qualification__links">
+            <h3 class="qualification__title">
+              <img src="assets/icon/work-case-svgrepo-com.svg" alt="work-icon" class="qualification__icon" />
+              Work Experience
+            </h3>
+            <div class="qualification__icons">
+              <div class="work__container">
+                <img src="assets/icon/telefonica.svg" alt="Telefonica" class="work__icon" />
+              </div>
+              <div class="work__container">
+                <img src="assets/icon/google.svg" alt="Google" class="work__icon vite" />
+              </div>
+              <div class="work__container">
+                <img src="assets/icon/cgi.svg" alt="CGI" class="work__icon" />
+              </div>
+              <div class="work__container">
+                <img src="assets/icon/teleperformance.svg" alt="Teleperformance" class="work__icon vite" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Habilidades (Skills) -->
+      <section class="skills section" id="skills">
+        <h2 data-aos="fade-down" class="section-title">Skills</h2>
+
+        <div class="skills__container h-grid">
+          <div data-aos="fade-down">
+            <h2 class="skills__subtitle">Languages, data bases, frameworks & tools that I have been using:</h2>
+
+            <!-- Lista de habilidades -->
+            <div data-aos="fade-down" class="skills__data">
+              <!-- Lenguajes de programación -->
+              <h3 class="skills-title">Language</h3>
+              <div class="skills__names">
+                <a href="#" class="skills__name vite"><img src="assets\icon\icons8-javascript.svg" alt="js" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\icons8-html-5.svg" alt="html" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\php3.svg" alt="php" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\icons8-css3.svg" alt="css" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\python.svg" alt="python" /></a>
+              </div>
+
+              <!-- Librerías y bases de datos -->
+              <h3 class="skills-title">Libraries & data bases</h3>
+              <div data-aos="fade-down" class="skills__names">
+                <a href="#" class="skills__name vite"><img src="assets\icon\mysql.svg" alt="mysql" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\phpmyadmin.svg" alt="phpmyadmin" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\icons8-bootstrap.svg" alt="bootstrap" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\fontisto-svgrepo-com.svg" alt="fontisto" /></a>
+              </div>
+
+              <!-- Tecnologías y herramientas -->
+              <h3 class="skills-title">Technologies & Tools</h3>
+              <div data-aos="fade-down" class="skills__names tools">
+                <a href="#" class="skills__name vite"><img src="assets\icon\git-svgrepo-com.svg" alt="git" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\icons8-github.svg" alt="github" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\icons8-figma.svg" alt="figma" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\visual-studio-code.svg" alt="vsc" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\xampp-svgrepo-com.svg" alt="xampp" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\google-analytics-svgrepo-com.svg" alt="Google_analytics" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\axio-svgrepo-com.svg" alt="axio" /></a>
+                <a href="#" class="skills__name vite"><img src="assets\icon\azure-svgrepo-com.svg" alt="azure" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sección de Contacto -->
+      <section class="contact h-grid" id="contact">
+        <h2 data-aos="fade-down" class="section-title">Contact:</h2>
+        <p data-aos="fade-down" class="contact__text">
+          Call me, write me an e-mail, or connect and chat with me on Linkedin.
+        </p>
+        <div data-aos="fade-down" class="contact__social">
+          <!-- Información de contacto (correo y teléfono) -->
+          <div class="contact__email">
+            <i class="bx bx-envelope icon"></i>
+            <address class="contact__email-content">diegofersev49@gmail.com</address>
+          </div>
+
+          <div class="contact__phone">
+            <i class="bx bxs-phone icon"></i>
+            <span class="contact__phone-content">Phone: +34 620 69 47 29</span>
+          </div>
+
+          <div class="contact__map">
+            <i class="bx bxs-map icon"></i>
+            <span class="contact__map-content">Lisbon, Portugal / Astorga, Spain</span>
+          </div>
+
+          <!-- Iconos de redes sociales -->
+          <div class="icon-social">
+            <a href="https://www.linkedin.com/in/diego-fernandez-sevilla/" target="_blank" class="icon-contact"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="mailto:diegofersev49@gmail.com"              target="_blank"
+              class="icon-contact"
+              ><i class="bx bxl-gmail"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+      <div class="footer__text">
+        <p>Thank you for watching! I would really appreciate tips!</p>
+      </div>
+
+      <!-- Derechos de autor dinámicos -->
+      <div class="footer__copyright">
+        <p>
+          <span id="year"></span> Copyright &copy; All Rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init(); // Inicializa las animaciones al hacer scroll
+    </script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear(); // Actualiza el año dinámicamente
+    </script>
+
+  </body>
+</html>
